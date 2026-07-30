@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+
+    <!-- Tier 1: HTML Meta Refresh Redirect -->
+    <!-- The "0" means wait 0 seconds before redirecting -->
+    <meta http-equiv="refresh" content="0; url=https://omnori.github.io">
+
+    <!-- Tier 2: JavaScript Redirect -->
+    <!-- We use window.location.replace so this redirect page doesn't clutter the user's "Back" button history -->
+    <script type="text/javascript">
+        window.location.replace("https://omnori.github.io");
+    </script>
+
+    <!-- Optional CSS for the fallback message to look professional -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            text-align: center;
+            padding-top: 10vh;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .message-box {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Tier 3: Manual Fallback Link -->
+    <!-- Displays if both Meta Refresh and JS fail or are blocked by strict browser settings -->
+    <div class="message-box">
+        <h2>Redirecting you to the service...</h2>
+        <p>If you are not redirected automatically within a few seconds, please <a href="https://omnori.github.io">click
+                here</a>.</p>
+    </div>
+
+</body>
+
+</html>
